@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerlinks}}
+</head>
+<body>
+    {{>navbar}}
+      <nav aria-label="breadcrumb" style="background: blue;">
+        <ol class="breadcrumb py-2 bg-primary" style="border:white 1px solid; margin:0;">
+          <li class="breadcrumb-item"><a href="/" style=" color:white; font-size: larger; text-decoration: none;">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page" style=" color:white; font-size: larger; text-decoration: none;"><a href="#" style=" color:white; font-size: larger; text-decoration: none;">About</a></li>
+        </ol>
+      </nav>
+        <div class="main-header col-12" style="margin-top: 2rem;">
+          <div class="col-6 main-header-left">
+            <figure>
+                <img src="public/images/MYpic-removebg-preview.png" alt="Mypic">
+            </figure>
+          </div>
+          <div class="col-6 main-header-right">
+            <h1 style="margin-left: 5px;">Welcome to my Wheater Application</h1>
+            <h3 style="margin-left: 5px;">My name is <span style="color: rgb(128, 255, 0);">Daksh Agarwal</span>. I am full stack MERN Developer, UX/UI Designer and freelancer</h3>
+            <div class="GlowingGradientButtonBox my-2" style="margin-left: 5px;">
+              <a href="#" >Check Now</a>
+          </div>
+          </div>
+        </div>
+    {{>footer}}
+    <script src="https://kit.fontawesome.com/978ee8aedf.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

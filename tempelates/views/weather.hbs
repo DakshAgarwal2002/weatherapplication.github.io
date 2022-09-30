@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerlinks}}
+</head>
+<body>
+    {{>navbar}}
+    <nav aria-label="breadcrumb" style="background: blue;">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/" style=" color:white; font-size: larger; text-decoration: none;">Home</a></li>
+          <li class="breadcrumb-item"><a href="/about" style=" color:white; font-size: larger; text-decoration: none;">About Me</a></li>
+          <li class="breadcrumb-item active" aria-current="page" style=" color:white; font-size: larger; text-decoration: none;"><a href="#" style=" color:white; font-size: larger; text-decoration: none;">Weather</a></li>
+        </ol>
+      </nav>
+      <div class="col-12" style="margin-top: 2rem;">
+          <div class="main-content">
+            <form class="temp-form" action="">
+              <input type="text" id="cityname" placeholder="Enter Your City..." autocomplete="off">
+              <input type="submit" id="SubmitBtn" value="Submit">
+            </form>
+            <div class="temp-info">
+            <div class="top_layer">
+              <p id="day" style="margin: 5px; font-size:18px; line-height:18px;"></p>
+              <p id="date" style="margin: 5px; font-size:18px; line-height:18px;"></p>
+            </div>
+            <div class="main_layer">
+              <p id="city-name">PUNE,IN</p>
+              <div class="middle-layer">
+                <p id="temp"><span>0</span><sup>o</sup>F</p>
+                <p id="temp-status"><i class="cloud fa-solid fa-cloud"></i></p>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+        </div>
+    {{>footer}}
+    <script src="public/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/978ee8aedf.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
